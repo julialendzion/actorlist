@@ -27,5 +27,10 @@ function actor(data) {
     console.log("dziala!!");
     document.querySelector(".details").classList.remove("hidden");
     document.querySelector(".movie").textContent = data.movie;
+    document.querySelector(".close").addEventListener("click", closeBox);
+  }
+
+  function closeBox() {
+    document.querySelector(".details").classList.add("hidden");
   }
 }
